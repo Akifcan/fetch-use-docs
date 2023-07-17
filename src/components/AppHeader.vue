@@ -3,7 +3,7 @@
     <div class="content">
       <a href="/" class="logo">fetch-use</a>
       <a class="right" style="text-decoration: underline" href="#"><i class="fas fa-book"></i>&nbsp; Documentation</a>
-      <a class="right" href="https://www.npmjs.com/package/fetch-use/v/1.0.7" target="_blank"
+      <a class="right" href="https://www.npmjs.com/package/fetch-use" target="_blank"
         ><i class="fas fa-paper-plane"></i>&nbsp; install from npm</a
       >
     </div>

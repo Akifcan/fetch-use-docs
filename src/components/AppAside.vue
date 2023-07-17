@@ -8,6 +8,7 @@ import UseFetchHook from './docs/UseFetchHook.vue'
 import UseCache from './docs/UseCache.vue'
 import AppRepository from './docs/AppRepository.vue'
 import AppProperties from './docs/AppProperties.vue'
+import CommonHeader from './docs/CommonHeader.vue'
 
 export interface SubProps {
   title: string
@@ -58,6 +59,11 @@ export const docs: DocProps[] = [
         title: 'useFetch hook',
         hash: '#use-fetch-hook',
         component: UseFetchHook
+      },
+      {
+        title: 'Common Headers',
+        hash: '#common-headers',
+        component: CommonHeader
       },
       {
         title: 'useCache',
