@@ -9,7 +9,7 @@ import AppCode from '../AppCode.vue'
     :code="[
       `import {FetchProvider} from 'fetch-use';`,
       `const BASE_URL = 'https://jsonplaceholder.typicode.com';`,
-      `<FetchProvider baseUrl={BASE_URL} errorView={<ErrorView />}>`,
+      `<FetchProvider baseUrl={BASE_URL} globalError={() => { console.log('handle global error');}} errorView={<ErrorView />}>`,
       `--<HomeScreen />`,
       `</FetchProvider>`
     ]"
