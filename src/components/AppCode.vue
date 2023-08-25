@@ -9,7 +9,7 @@ const codeRef = ref()
 defineProps<Props>()
 const copyButtonText = ref('copy')
 const handleCopy = () => {
-  navigator.clipboard.writeText(codeRef.value.textContent).then(
+  navigator.clipboard.writeText(codeRef.value.textContent.replace(/(\s\s\s*)/g, ' ')).then(
     () => {
       copyButtonText.value = 'Copied'
     },
@@ -28,9 +28,19 @@ const handleCopy = () => {
     </div>
     <div ref="codeRef" class="code--view">
       <div v-for="(x, index) in code" :key="index">
-        <span v-if="x.startsWith('--')">&nbsp; &nbsp;</span>
+        <span v-if="x.startsWith('-')">
+          <span v-for="v in x.split('-').length" :key="v">&nbsp;</span>
+        </span>
+        <!-- <span v-if="x.startsWith('--')">&nbsp; &nbsp;</span>
         <span v-if="x.startsWith('----')">&nbsp; &nbsp; &nbsp; &nbsp;</span>
-        {{ x.replace('--', '').replace('--', '') }}
+        <span v-if="x.startsWith('-----')">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> -->
+        {{
+          x
+            .split('')
+            .filter((y) => y !== '-')
+            .join('')
+            .replace('//', '-')
+        }}
       </div>
     </div>
   </div>
