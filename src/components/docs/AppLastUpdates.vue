@@ -1,7 +1,7 @@
 <template>
   <section>
     <article>
-      <p>Version: v5.0.5</p>
+      <p>Version: v6.0.0</p>
       <h4>Error property type changed.</h4>
       <p>
         The <b>error</b> property type has been edited. (Won't be string anymore) Now you can access the response object
