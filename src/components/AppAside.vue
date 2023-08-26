@@ -9,6 +9,8 @@ import UseCache from './docs/UseCache.vue'
 import AppRepository from './docs/AppRepository.vue'
 import AppProperties from './docs/AppProperties.vue'
 import CommonHeader from './docs/CommonHeader.vue'
+import AppLastUpdates from './docs/AppLastUpdates.vue'
+import GlobalErrorHandler from './docs/GlobalErrorHandler.vue'
 
 export interface SubProps {
   title: string
@@ -36,6 +38,11 @@ export const docs: DocProps[] = [
         component: ReactInfo
       },
       {
+        title: 'Last Updates',
+        hash: '#last-updates',
+        component: AppLastUpdates
+      },
+      {
         title: 'Install',
         hash: '#install',
         component: AppInstall
@@ -49,6 +56,11 @@ export const docs: DocProps[] = [
         title: 'Fetch Provider',
         hash: '#fetch-provider',
         component: FetchProvider
+      },
+      {
+        title: 'Global Error Handler',
+        hash: '#global-error-handler',
+        component: GlobalErrorHandler
       },
       {
         title: 'Custom Error Component',

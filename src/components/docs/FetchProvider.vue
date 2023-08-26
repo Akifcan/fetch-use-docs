@@ -7,7 +7,7 @@ import AppCode from '../AppCode.vue'
   <AppCode
     title="App.tsx"
     :code="[
-      `import {FetchProvider} from 'fetch-use';`,
+      `import {FetchProvider} from 'fetch//-use';`,
       `const BASE_URL = 'https://jsonplaceholder.typicode.com';`,
       `<FetchProvider baseUrl={BASE_URL} globalError={() => { console.log('handle global error');}} errorView={<ErrorView />}>`,
       `--<HomeScreen />`,

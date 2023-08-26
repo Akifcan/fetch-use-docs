@@ -47,6 +47,7 @@
       '--if (!todoError) {',
       '----return;',
       '--}',
+      'console.log(todoError.message);',
       'console.log(todoError);',
       '}, [todoError]);'
     ]"
