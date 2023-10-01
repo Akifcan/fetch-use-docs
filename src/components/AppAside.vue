@@ -11,6 +11,7 @@ import AppProperties from './docs/AppProperties.vue'
 import CommonHeader from './docs/CommonHeader.vue'
 import AppLastUpdates from './docs/AppLastUpdates.vue'
 import GlobalErrorHandler from './docs/GlobalErrorHandler.vue'
+import TimeoutFunction from './docs/TimeoutFunction.vue'
 
 export interface SubProps {
   title: string
@@ -81,6 +82,11 @@ export const docs: DocProps[] = [
         title: 'useCache',
         hash: '#use-cache',
         component: UseCache
+      },
+      {
+        title: 'timeout - TTL',
+        hash: '#ttl',
+        component: TimeoutFunction
       },
       {
         title: 'Properties',

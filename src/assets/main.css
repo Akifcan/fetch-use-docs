@@ -334,6 +334,27 @@ a:hover {
     margin-top: 20px;
     margin-left: 0px;
   }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .content .logo {
+    margin-left: 0;
+    width: auto;
+  }
+  .sidepanel {
+    padding-top: 2rem;
+  }
+  .content .right {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .content .logo {
+    font-size: 1.3rem !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 650px and up) */
