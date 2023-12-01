@@ -1555,11 +1555,6 @@ he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-highlight.js@^11.8.0:
-  version "11.8.0"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.8.0.tgz#966518ea83257bae2e7c9a48596231856555bb65"
-  integrity sha512-MedQhoqVdr0U6SSnWPzfiadUcDHfN/Wzq25AkXiQv9oiOO/sG0S7XkvpFIqWBl9Yq1UYyYOOVORs5UW2XlPyzg==
-
 hosted-git-info@^2.1.4:
   version "2.8.9"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
@@ -2234,13 +2229,6 @@ side-channel@^1.0.4:
     call-bind "^1.0.0"
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
-
-simple-code-editor@^2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/simple-code-editor/-/simple-code-editor-2.0.7.tgz#4f10743b31fb3cbd2f58dc49ad37b6f9cdc65b23"
-  integrity sha512-ffaA0SpHawlck8Vgdu4omYX3D9qLhfO9lkrR1FfwBI0Q6Cz5XSpX2Fc5vMa3UhX8DzBni1I/bNvR49QlzTYU7w==
-  dependencies:
-    highlight.js "^11.8.0"
 
 slash@^3.0.0:
   version "3.0.0"
